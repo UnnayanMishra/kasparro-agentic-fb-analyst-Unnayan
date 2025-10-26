@@ -517,25 +517,11 @@ Contributions welcome! Please:
 
 ---
 
-## 📜 License
-
-MIT License - see LICENSE file for details
-
----
-
-## 🙏 Acknowledgments
-
-- **Anthropic Claude** (original design inspiration)
-- **OpenAI GPT-4o** (powering the agents)
-- **Kasparro Team** for the assignment specification
-
----
-
 ## 📧 Contact
 
 **Unnayan Mishra**  
-GitHub: [@yourusername](https://github.com/yourusername)  
-Email: your.email@example.com
+GitHub: [@UnnayanMishra](https://github.com/UnnayanMishra)  
+Email: itsunnayan12@gmail.com
 
 ---
 
@@ -543,7 +529,7 @@ Email: your.email@example.com
 
 **Version:** 1.0  
 **Release Date:** January 2025  
-**Release Tag:** [v1.0](https://github.com/yourusername/kasparro-agentic-fb-analyst-Unnayan/releases/tag/v1.0)
+**Release Tag:** [v1.0](https://github.com/UnnayanMishra/kasparro-agentic-fb-analyst-Unnayan/releases/tag/v1.0)
 
 ---
 
