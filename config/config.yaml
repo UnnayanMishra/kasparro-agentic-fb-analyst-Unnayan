@@ -1,8 +1,14 @@
 # API Configuration
 api:
-  model: "claude-sonnet-4"
+  model: "gpt-4o-mini"  # Cost-efficient model
   max_tokens: 4096
   temperature: 0.0
+
+# Alternative: Use gpt-4o for better quality (costs more)
+# api:
+#   model: "gpt-4o"
+#   max_tokens: 4096
+#   temperature: 0.0
 
 # Evaluation Thresholds
 thresholds:

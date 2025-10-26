@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import logging
 
-from utils.llm_client import ClaudeClient
+from utils.llm_client import LLMClient
 from utils.logger import StructuredLogger
 
 logger = logging.getLogger(__name__)
@@ -19,7 +19,7 @@ class BaseAgent(ABC):
         self,
         agent_name: str,
         system_prompt: str,
-        llm_client: Optional[ClaudeClient] = None,
+        llm_client: Optional[LLMClient] = None,
         structured_logger: Optional[StructuredLogger] = None
     ):
         """Initialize base agent.
@@ -27,12 +27,12 @@ class BaseAgent(ABC):
         Args:
             agent_name: Name of the agent
             system_prompt: System prompt defining agent behavior
-            llm_client: Claude API client (creates new if None)
+            llm_client: LLM API client (creates new if None)
             structured_logger: Logger instance
         """
         self.agent_name = agent_name
         self.system_prompt = system_prompt
-        self.llm_client = llm_client or ClaudeClient()
+        self.llm_client = llm_client or LLMClient()
         self.structured_logger = structured_logger
         
         logger.info(f"Initialized {self.agent_name}")
@@ -49,7 +49,7 @@ class BaseAgent(ABC):
         pass
     
     def _call_llm(self, user_prompt: str) -> str:
-        """Call Claude API with error handling.
+        """Call LLM API with error handling.
         
         Args:
             user_prompt: User message

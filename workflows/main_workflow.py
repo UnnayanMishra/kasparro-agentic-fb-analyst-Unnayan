@@ -9,7 +9,7 @@ from agents.insight_agent import InsightAgent
 from agents.evaluator_agent import EvaluatorAgent
 from agents.creative_generator import CreativeGeneratorAgent
 from utils.validators import TaskPlan, DataSummary, FinalReport
-from utils.llm_client import ClaudeClient
+from utils.llm_client import LLMClient as ClaudeClient
 from utils.logger import StructuredLogger
 from datetime import datetime
 
